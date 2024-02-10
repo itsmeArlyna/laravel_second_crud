@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.nav{
+    background-color: rgb(255, 196, 0);
+    padding: 1%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.nav li a{
+    text-decoration: none;
+    color: #2c2c2c !important;
+    font-size: 3vh;
+    font-weight: 600;
+}
+#active a{
+    color: rgb(0, 38, 255) !important;
+    font-weight: bolder;
+    text-shadow: 3px 2px 5px #ffffffd8, 0 -1px 0 #ffffffa8, 0 1px 0 #ffffffa8, -1px 0 0 #ffffffa8;
+}
+.home-card img{
+    width: 25rem;
+    height: 20rem;
+}
+#logo img{
+    width: 4rem;
+}
