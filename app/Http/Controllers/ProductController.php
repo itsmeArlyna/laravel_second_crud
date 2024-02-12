@@ -21,7 +21,11 @@ class ProductController extends Controller
         } elseif ($request->is('update')) {
             $products = Products::all();
             return view('seller.update_products', ['products' => $products]);
+        } elseif ($request->is('order')) {
+            $products = Products::all();
+            return view('customer.order_products', ['products' => $products]);
         }
+        
     }
 
     /**

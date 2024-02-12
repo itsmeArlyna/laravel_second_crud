@@ -6,6 +6,13 @@
     <title>Seller</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href={{asset('css/upload_products.css')}}>
+    <style>
+    body {
+        background: url('/img/SB.png') !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+    </style>
 </head>
   <body>
     <div class="container-fluid p-0">
@@ -24,15 +31,15 @@
             </li>
         </ul>
     </div>
-    <div class="container pt-5">
-        <div class="row d-flex justify-content-center mt-5">
-           <div class="col-8">
+    <div class="container-fluid pt-5">
+        <div class="row mt-3">
+           <div class="col-6">
             <div>
                 @foreach ($errors->all() as $error)
                         <p class="alert alert-danger">{{ $error }}</p>
                     @endforeach
             </div>
-            <div class="card p-3">
+            <div class="card p-3 update">
                 <div class="card-body">
                     <h1>List new Product</h1>
                     <form action= {{ route('upload_products.store') }} method="post" enctype="multipart/form-data">

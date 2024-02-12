@@ -4,25 +4,35 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 .nav{
-    background-color: rgb(255, 196, 0);
+    background-color: rgb(0, 0, 0);
     padding: 1%;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .nav li a{
     text-decoration: none;
-    color: #2c2c2c !important;
+    color: rgb(255, 255, 255) !important;
     font-size: 3vh;
-    font-weight: 600;
 }
 #active a{
-    color: rgb(0, 38, 255) !important;
-    font-weight: bolder;
-    text-shadow: 3px 2px 5px #ffffffd8, 0 -1px 0 #ffffffa8, 0 1px 0 #ffffffa8, -1px 0 0 #ffffffa8;
+    color: rgb(255, 251, 0) !important;
+    font-weight: 900;
 }
 .home-card img{
-    width: 25rem;
+    width: 20rem;
     height: 20rem;
 }
+
 #logo img{
     width: 4rem;
+}
+.home-card{
+    transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.home-card:hover{
+    transform: scale(1.1);
+}
+.update{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin: 10%;
 }

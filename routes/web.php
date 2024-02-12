@@ -18,6 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/about', function () {
+    return view('customer.about_us');
+});
 
 Route::get('/seller', function () {
     return view('seller.welcome_seller');
@@ -32,3 +35,5 @@ Route::get('/product/{product}/edit', [ ProductController ::class, 'edit'])->nam
 Route::put('/product/{product}/update', [ ProductController ::class, 'update'])->name('seller.edit_products');
 Route::delete('product/{product}', [ProductController::class, 'destroy'])->name('seller.destroy');
 Route::post('/search', [ProductController::class, 'search']);
+
+Route::get('/order', [ProductController::class, 'index'])->name('customer.order_products');

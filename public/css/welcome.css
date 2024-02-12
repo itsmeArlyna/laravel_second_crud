@@ -1,29 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body {
-    background-image: url('/img/bg.png') !important;
+    background-image: url('/img/bg1.png') !important;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
 }
-.title{
-    margin-top: 15%;
-    background-color: #ffffff2d;
+
+.title {
+    margin-top: 5%;
     border-radius: 1rem;
 }
-.title h1{
+
+.title h1 {
     color: rgb(251, 255, 1);
-    font-size: 14vh;
+    font-size: 13vh;
     text-shadow: 3px 2px 5px #000000d8, 0 -1px 0 #000000a8, 0 1px 0 #000000a8, -1px 0 0 #000000a8;
     font-weight: bolder;
 }
-.title h5{
+
+.title h5 {
     color: rgb(255, 255, 255);
     font-size: 4vh;
     font-weight: bolder;
     text-shadow: 3px 2px 5px #000000d8, 0 -1px 0 #000000a8, 0 1px 0 #000000a8, -1px 0 0 #000000a8;
 }
-.buy{
+
+.buy {
     margin-top: 5%;
     background-color: rgb(255, 238, 0);
     width: 30%;
@@ -36,17 +39,43 @@ body {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     cursor: pointer;
 }
-.buy h1{
+
+.buy h1 {
     font-weight: bold;
     text-decoration: none;
     color: #000000e0;
 }
-.buy:hover{
+
+.buy:hover {
     transform: scale(0.9);
 }
-.text-dark{
+
+.text-dark {
     text-shadow: 1px 1px 10px #ffffffd8, 0 -1px 0 #ffffffa8, 0 1px 0 #ffffffa8, -1px 0 0 #ffffffa8;
 }
-a{
+
+a {
     text-decoration: none;
+}
+
+.nav {
+    padding: 1%;
+    background: rgba(0, 0, 0, 0.438);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(43, 43, 43, 0.3);
+    justify-content: center;
+    display: flex;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255) !important;
+    font-size: 3.5vh;
+}
+
+#active a {
+    color: rgb(255, 251, 0) !important;
+    font-weight: 900;
 }

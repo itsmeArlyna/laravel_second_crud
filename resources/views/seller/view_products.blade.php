@@ -6,6 +6,8 @@
     <title>Seller</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href={{asset('css/upload_products.css')}}>
+    <style>
+    </style>
 </head>
   <body>
     <div class="container-fluid p-0">
@@ -33,7 +35,7 @@
         <div class="row">
             @foreach($products as $product)
                 <div class="col-4">
-                    <div class="card mb-3 home-card">
+                    <div class="card mb-5 home-card">
                         <div class="justify-content-center d-flex">
                             <img  src={{ asset('storage/' . $product->image) }} class="card-img-top" style="object-fit: cover;" alt="...">
                         </div>
